@@ -1,0 +1,58 @@
+:root {
+  --cyan: hsl(193, 38%, 86%);
+  --green: hsl(150, 100%, 66%);
+  --gray: hsl(217, 19%, 38%);
+  --grayblue: hsl(217, 19%, 24%);
+  --darkblue: hsl(218, 23%, 16%);
+  --font: 28px;
+}
+
+body {
+  background-color: var(--darkblue);
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+#container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-inline: 10px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: var(--grayblue);
+  border-radius: 10px;
+}
+#id {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+#sfat {
+  color: var(--cyan);
+  font-size: var(--font);
+  text-align: center;
+}
+#button {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 30px;
+  aspect-ratio: 1;
+  background-color: var(--green);
+  transform: translateY(50%);
+}
+#button:hover {
+  box-shadow: 0px 0px 20px var(--green);
+}
+@media screen and (width>400px) {
+  #container {
+    max-width: 600px;
+  }
+}
