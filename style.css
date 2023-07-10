@@ -22,19 +22,20 @@ body {
   margin-inline: 10px;
   padding-top: 20px;
   padding-bottom: 50px;
+  padding-inline: 30px;
   background-color: var(--grayblue);
   border-radius: 10px;
 }
 #id {
   color: var(--green);
   font-size: 14px;
-  font-weight: 100;
   letter-spacing: 4px;
 }
 #sfat {
   color: var(--cyan);
   font-size: var(--font);
   text-align: center;
+  font-weight: 800;
 }
 #button {
   position: absolute;

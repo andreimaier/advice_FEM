@@ -1,7 +1,6 @@
 const id = document.querySelector('#id')
 const sfat = document.querySelector('#sfat')
 const button = document.querySelector('#button')
-const baba = document.querySelector('#lala')
 
 async function getAdvice() {
     const response = await fetch("https://api.adviceslip.com/advice?t=" + Math.random());
@@ -10,7 +9,7 @@ async function getAdvice() {
     id.textContent = `ADVICE #${advice.slip.id}`
     sfat.textContent = `"${advice.slip.advice}"`
 
-    // console.log(advice.slip);
+    console.log(advice.slip);
 }
 
 button.addEventListener('click', () => getAdvice())
