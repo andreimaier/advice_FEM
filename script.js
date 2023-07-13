@@ -1,18 +1,22 @@
 const id = document.querySelector('#id')
 const sfat = document.querySelector('#sfat')
 const button = document.querySelector('#button')
+let response = ''
 
 async function getAdvice() {
-    const response = await fetch("https://api.adviceslip.com/advice?t=" + Math.random());
-    const advice = await response.json();
+    const request = await fetch("https://api.adviceslip.com/advice?t=" + Math.random());
+    response = await request.json();
 
-    id.textContent = `ADVICE #${advice.slip.id}`
-    sfat.textContent = `"${advice.slip.advice}"`
+    console.log(response.slip);
+}
+async function giveAdvice() {
+    await getAdvice()
 
-    console.log(advice.slip);
+    id.textContent = `ADVICE #${response.slip.id}`
+    sfat.textContent = `"${response.slip.advice}"`
 }
 
-button.addEventListener('click', () => getAdvice())
+button.addEventListener('click', () => giveAdvice())
 
 
 
