@@ -32,18 +32,47 @@
     </style>
   </head>
   <body>
-    <div id="container">
-      <p id="id">ADVICE #100</p>
-      <p id="sfat">Generating advice...</p>
-      <picture>
-        <source
-          srcset="./images/pattern-divider-desktop.svg"
-          media="(width>=400px)"
-        />
-        <img src="./images/pattern-divider-mobile.svg" />
-      </picture>
-      <div id="button">
-        <img src="./images/icon-dice.svg" \ />
+    <div id="hidden">
+      <label for="number">How many pieces of advice would you like?</label>
+      <div>
+        <select name="" id="number">
+          <option value="none">Please choose an option</option>
+          <option value="one" data-#="1">One</option>
+          <option value="two" data-#="2">Two</option>
+          <option value="three" data-#="3">Three</option>
+          <option value="four" data-#="4">Four</option>
+        </select>
+        <span class="custom-arrow"></span>
+      </div>
+    </div>
+    <div class="advice-wrapper">
+      <div class="container">
+        <p class="id" data-id="one">ADVICE #100</p>
+        <p class="sfat" data-sfat="one">Generating advice...</p>
+        <picture>
+          <source
+            srcset="./images/pattern-divider-desktop.svg"
+            media="(width>=400px)"
+          />
+          <img src="./images/pattern-divider-mobile.svg" />
+        </picture>
+        <div id="one" class="button">
+          <img src="./images/icon-dice.svg" \ />
+        </div>
+      </div>
+      <div class="container">
+        <p class="id" data-id="two">ADVICE #100</p>
+        <p class="sfat" data-sfat="two">Generating advice...</p>
+        <picture>
+          <source
+            srcset="./images/pattern-divider-desktop.svg"
+            media="(width>=400px)"
+          />
+          <img src="./images/pattern-divider-mobile.svg" />
+        </picture>
+        <div id="two" class="button">
+          <img src="./images/icon-dice.svg" \ />
+        </div>
       </div>
     </div>
 
