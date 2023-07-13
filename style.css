@@ -60,6 +60,6 @@ h1 {
 }
 @media screen and (width>400px) {
   #container {
-    max-width: 600px;
+    max-width: 460px;
   }
 }
